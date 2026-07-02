@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#74c9ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:#fff;
+    width:420px;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+input{
+    width:100%;
+    padding:13px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.password-box{
+    display:flex;
+    gap:8px;
+}
+
+.password-box input{
+    flex:1;
+}
+
+.password-box button{
+    width:55px;
+    border:none;
+    border-radius:8px;
+    background:#008cff;
+    color:white;
+    cursor:pointer;
+}
+
+.login-btn{
+    width:100%;
+    padding:13px;
+    margin-top:15px;
+    border:none;
+    border-radius:8px;
+    background:#008cff;
+    color:white;
+    cursor:pointer;
+}
+
+.login-btn:hover,
+.password-box button:hover{
+    background:#006dd8;
+}
+
+/* Popup */
+
+.popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.5);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.popup-box{
+    background:white;
+    width:320px;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.popup-box p{
+    margin-bottom:20px;
+}
+
+.popup-box button{
+    padding:10px 30px;
+    border:none;
+    background:#008cff;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* Responsive */
+
+@media(max-width:600px){
+
+.container{
+    width:90%;
+    padding:25px;
+}
+
+.popup-box{
+    width:90%;
+}
+
+}
+
+.show-password{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-top:-5px;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+.show-password input{
+    width:auto;
+    margin:0;
+}
+
+.back-link{
+    text-align:center;
+    margin-top:15px;
+    font-size:14px;
+}
+
+.back-link a{
+    color:#008cff;
+    text-decoration:none;
+}
+
+.back-link a:hover{
+    text-decoration:underline;
+}
